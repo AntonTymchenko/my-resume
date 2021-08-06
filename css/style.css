@@ -1,0 +1,249 @@
+/*сброс елементов по умолчанию */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*свойство чтобы контент не растягивал контейнер*/
+}
+body {
+  background-color: #f5f7fa;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  font-family: Montserrat;
+}
+
+.wrapper {
+  /*белій фоновій цвет*/
+  background: #fff;
+  display: flex; /*чтобы сайдбар и инфо контейнеры отображались по горизонтали обтекали друг друга*/
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  background: #1e2939;
+  width: 370px;
+  padding-top: 40px; /*отступ картинки от верха*/
+  padding-bottom: 40px;
+}
+.my-photo {
+  width: 370px;
+}
+.about-me-container {
+  /*выравниваем основной контент*/
+  padding-top: 110px;
+  padding-left: 90px;
+  padding-bottom: 110px;
+  padding-right: 90px;
+}
+.contacts-container {
+  /*выравнивание контейнера контактов относительно sidebar*/
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.contacts-title {
+  /*стили для заголовка контактов в сайдбаре*/
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contacts-link {
+  /*стили для номера телефона и имейла*/
+  color: #868c95;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contacts-link-type {
+  /*стили для букв E C*/
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 10px;
+}
+.tech-skills-title {
+  /*стили для зоголовка тех скилс*/
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.tech-skills-container {
+  /*отступы контейнера тех скилс относительно сайдбара*/
+  padding-left: 40px;
+  padding-top: 55px;
+  padding-right: 55px;
+}
+.tech-skills-item {
+  /*стили для списка тех скилс вісота шрифта размер и жирность + задаем цвет точкам списка*/
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+  color: #ff6b08;
+}
+.tech-skills-text {
+  /*меняем цвет списка чтобы точки остались оранжевые*/
+  color: #bfc3c7;
+}
+
+.soft-skills-container {
+  /*выравниваем контейнер софт скилс*/
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+.soft-skills-title {
+  /*cтили для софт скилс названия*/
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+.soft-skills-item {
+  /*стили для списка софт скилс*/
+  height: 14px;
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 15px;
+}
+.soft-skills-text {
+  color: #d1d4d7;
+}
+.profession {
+  /* Style for "Front-End" */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.my-name {
+  /* Style for "Anton Tymchenko" */
+  line-height: 89px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.discription {
+  /* Style for "my information" */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.info-container {
+  margin-bottom: 60px;
+}
+.about-me-title {
+  /* Style for "Projects"  "Work experience" "Education"*/
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.projects-link {
+  /* Style for "https://lo" */
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tech-name {
+  /* Style for "HTML? CSS? Javascript" */
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.dots {
+  /*style for dots*/
+  color: #bebebe;
+  font-weight: 100;
+}
+.project-item {
+  /*style for number of list отступы чтобы номера были под надписью projects*/
+  font-weight: 700;
+  margin-left: 17px;
+}
+.project-container {
+  /*отступ от контейнера Projects до контейнера Work experience*/
+  margin-bottom: 55px;
+}
+.profession-title {
+  /*style for name of profession*/
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.profession-company {
+  /*цвет для текста компаний оранжевій*/
+  color: #ff6b08;
+}
+.profession-time {
+  /*стили для периода работы и слова Ukraine */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b1b1b1;
+}
+.profession-devider {
+  color: #1e2939;
+}
+.profession-duties {
+  /*отступ от списка обязаностей до периода работы*/
+  margin-top: 15px;
+}
+.profession-duties-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 18px;
+  color: #686868;
+}
+.company-one {
+  /*отступ от первой компани  до второй 25 px*/
+  margin-bottom: 25px;
+}
+.company-two {
+  /*отступ от второй компани до третьей 25 px*/
+  margin-bottom: 25px;
+}
+.company-three {
+  margin-bottom: 25px;
+}
+.company-three-duties {
+  margin-left: 18px;
+}
+.company-three-duties-item {
+  /* стили для списка третьей компании*/
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+}
+.universaty-name {
+  /*стили и отступ для названия университета*/
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.ocupation-name {
+  /*стили для названия специальности*/
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
