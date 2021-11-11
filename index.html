@@ -9,17 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!--для подключения стиля накалиграфии Монсерат-->
   </head>
 
   <body>
-    <!-- main container -->
     <div class="wrapper">
       <aside class="sidebar">
         <img class="my-photo" src="./img/Tymchenko.jpg" alt="My photo" />
         <div class="main-container">
           <div class="contacts-container">
-            <!--My contacts container -->
             <h3 class="contacts-title">Contacts</h3>
             <div>
               <span class="contacts-link-type">C: </span
@@ -29,58 +26,25 @@
             </div>
             <div>
               <span class="contacts-link-type">E:</span>
-              <a class="contacts-link" href="mailto:timchenkov_@ukr.net"
-                >timchenkov_@ukr.net</a
+              <a class="contacts-link" href="mailto:antontymchenko87@gmail.com"
+                >antontymchenko87@gmail.com</a
               >
             </div>
           </div>
-          <!--My tech skills container -->
+
           <div class="tech-skills-container">
             <h3 class="tech-skills-title">Tech Skills</h3>
-            <ul>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">HTML5</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">CSS3</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">GIT</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">WebPack</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">JavaScript</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">React.js</span>
-              </li>
-              <li class="tech-skills-item">
-                <span class="tech-skills-text">Node.js</span>
-              </li>
-            </ul>
+            <ul class="listOfScills"></ul>
           </div>
-          <!--Soft skills container -->
+
           <div class="soft-skills-container">
             <h3 class="soft-skills-title">Soft skills</h3>
-            <ul>
-              <li class="soft-skills-item">
-                <span class="soft-skills-text">Scrum</span>
-              </li>
-              <li class="soft-skills-item">
-                <span class="soft-skills-text">Agile</span>
-              </li>
-              <li class="soft-skills-item">
-                <span class="soft-skills-text">Teamwork</span>
-              </li>
-            </ul>
+            <ul class="listSoft-js"></ul>
           </div>
         </div>
       </aside>
-      <!-- about me container -->
+
       <div class="about-me-container">
-        <!-- about me main info container -->
         <div class="info-container">
           <h2 class="profession">Front-End Developer</h2>
           <h1 class="my-name">Anton Tymchenko</h1>
@@ -92,7 +56,7 @@
             developers.
           </p>
         </div>
-        <!-- project container -->
+
         <div class="project-container">
           <h3 class="about-me-title">Projects</h3>
 
@@ -138,10 +102,10 @@
             </li>
           </ol>
         </div>
-        <!-- work experience container -->
+
         <div>
           <h3 class="about-me-title">Work Experience</h3>
-          <!--company 1-->
+
           <div class="company-one">
             <h4 class="profession-title">
               The State Borderguard Service of Ukraine
@@ -162,7 +126,6 @@
             </ul>
           </div>
 
-          <!--My education-->
           <div>
             <h3 class="about-me-title">Education</h3>
             <p class="universaty-name">
@@ -187,5 +150,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/listOfSkills.js" type="module"></script>
+    <script src="./js/listOfSoftSkills.js" type="module"></script>
   </body>
 </html>
