@@ -1,249 +1,215 @@
-/*сброс елементов по умолчанию */
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box; /*свойство чтобы контент не растягивал контейнер*/
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  background-color: #f5f7fa;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-  font-family: Montserrat;
+  padding: 40px 20px;
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+  background-color: #cbeeff;
 }
 
-.wrapper {
-  /*белій фоновій цвет*/
-  background: #fff;
-  display: flex; /*чтобы сайдбар и инфо контейнеры отображались по горизонтали обтекали друг друга*/
-  max-width: 1200px;
+.main-conteiner {
+  display: flex;
   margin: 0 auto;
-  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
-}
-.sidebar {
-  background: #1e2939;
-  width: 370px;
-  padding-top: 40px; /*отступ картинки от верха*/
-  padding-bottom: 40px;
-}
-.my-photo {
-  width: 370px;
-}
-.about-me-container {
-  /*выравниваем основной контент*/
-  padding-top: 110px;
-  padding-left: 90px;
-  padding-bottom: 110px;
-  padding-right: 90px;
-}
-.contacts-container {
-  /*выравнивание контейнера контактов относительно sidebar*/
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.contacts-title {
-  /*стили для заголовка контактов в сайдбаре*/
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.contacts-link {
-  /*стили для номера телефона и имейла*/
-  color: #868c95;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-.contacts-link-type {
-  /*стили для букв E C*/
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 10px;
-}
-.tech-skills-title {
-  /*стили для зоголовка тех скилс*/
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.tech-skills-container {
-  /*отступы контейнера тех скилс относительно сайдбара*/
-  padding-left: 40px;
-  padding-top: 55px;
-  padding-right: 55px;
-}
-.tech-skills-item {
-  /*стили для списка тех скилс вісота шрифта размер и жирность + задаем цвет точкам списка*/
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-left: 15px;
-  color: #ff6b08;
-}
-.tech-skills-text {
-  /*меняем цвет списка чтобы точки остались оранжевые*/
-  color: #bfc3c7;
+  max-width: 1200px;
 }
 
-.soft-skills-container {
-  /*выравниваем контейнер софт скилс*/
-  padding-left: 40px;
-  padding-top: 50px;
-  padding-right: 40px;
-  padding-bottom: 50px;
+.sidebar{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  max-width: 370px;
+  background: -moz-linear-gradient(#003c5a, #006699);
+  background: -webkit-linear-gradient(#003c5a, #006699);
+  background: -o-linear-gradient(#003c5a, #006699);
+  background: linear-gradient(#003c5a, #006699);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffec;
+  text-shadow: -1px 1px 0 rgba(2, 9, 104, 0.4);
 }
-.soft-skills-title {
-  /*cтили для софт скилс названия*/
+
+.my-photo {
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+}
+
+.contacts-container{
+  margin: 60px 40px;
+}
+
+.contacts-title {
+  margin-bottom: 20px;
   font-size: 22px;
   font-weight: 700;
-  line-height: 24px;
+  color: #ffffec;
+}
+
+.contacts-link {
+  line-height: 30px;
+  color: #ffbf00;
+  transition: 0.2s linear;
+}
+
+.contacts-link:hover {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
   color: #fff;
 }
-.soft-skills-item {
-  /*стили для списка софт скилс*/
-  height: 14px;
-  color: #ff6b08;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 15px;
+
+.contacts-link-type {
+  margin-right: 10px;
+  font-weight: 700;
+  color: #ffffec;
 }
+
+.tech-skills-container{
+  margin: 60px 40px;
+}
+
+.tech-skills-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color:#ffffec;
+}
+
+.tech-skills-list {
+  margin-left: 12px;
+  color: #ffbf00;
+}
+
+.tech-skills-text {
+  color: #ffffec;
+}
+
+.soft-skills-container{
+  margin: 60px 40px;
+}
+
+.soft-skills-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffec;
+}
+
+.soft-skills-list {
+  margin-left: 12px;
+  color: #ffbf00;
+}
+
 .soft-skills-text {
-  color: #d1d4d7;
+  color: #ffffec;
 }
-.profession {
-  /* Style for "Front-End" */
-  font-size: 14px;
-  font-weight: 700;
+
+.about-me-container {
+  padding: 110px 90px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, .4);
+  background-color: #fdfdf8;
   line-height: 24px;
-  margin-bottom: 5px;
-}
-.my-name {
-  /* Style for "Anton Tymchenko" */
-  line-height: 89px;
-  font-size: 45px;
-  font-weight: 700;
-}
-.discription {
-  /* Style for "my information" */
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 5px;
+  color:#000066;
+  text-shadow: -0.5px 0.5px 0 rgba(2, 9, 104, 0.4);
 }
-.info-container {
+
+.about-me-main-info {
+  margin-left: 20px;
+  margin-bottom: 65px;
+}
+
+.projects-container,
+.work-experience {
+  margin-left: 25px;
   margin-bottom: 60px;
 }
+
+.profession-title,
+.my-name,
 .about-me-title {
-  /* Style for "Projects"  "Work experience" "Education"*/
-  font-size: 22px;
   font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 10px;
+  color:#003366;
 }
+
+
+.about-me-title {
+  margin-bottom: 25px;
+  font-size: 22px
+}
+
+.profession-title{
+  margin-top: 90px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.my-name {
+  margin-bottom: 40px;
+  line-height: 90px;
+  font-size: 45px;
+}
+
+
+.projects-list {
+  font-weight: 700;
+  color:#000066;
+}
+
 .projects-link {
-  /* Style for "https://lo" */
-  color: #595959;
-  font-size: 14px;
+  text-decoration: none;
   font-weight: 400;
-  line-height: 24px;
+  color: #000066;
 }
-.tech-name {
-  /* Style for "HTML? CSS? Javascript" */
-  color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-.dots {
-  /*style for dots*/
-  color: #bebebe;
-  font-weight: 100;
-}
-.project-item {
-  /*style for number of list отступы чтобы номера были под надписью projects*/
+
+.projects-link:hover {
   font-weight: 700;
-  margin-left: 17px;
 }
-.project-container {
-  /*отступ от контейнера Projects до контейнера Work experience*/
-  margin-bottom: 55px;
+
+.instruments,
+.points {
+  font-weight: 400;
+  color: #000066;
 }
-.profession-title {
-  /*style for name of profession*/
+
+.profession-name {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  color:#000066;
 }
-.profession-company {
-  /*цвет для текста компаний оранжевій*/
-  color: #ff6b08;
+
+.company-name {
+  color: #ffbf00;
+  text-shadow: -0.5px 0.5px 0 rgba(248, 137, 34, 0.4);
 }
-.profession-time {
-  /*стили для периода работы и слова Ukraine */
+
+.working-time {
   font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #b1b1b1;
 }
-.profession-devider {
-  color: #1e2939;
-}
+
 .profession-duties {
-  /*отступ от списка обязаностей до периода работы*/
-  margin-top: 15px;
+  margin-top: 12px;
 }
-.profession-duties-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-left: 18px;
-  color: #686868;
-}
-.company-one {
-  /*отступ от первой компани  до второй 25 px*/
-  margin-bottom: 25px;
-}
-.company-two {
-  /*отступ от второй компани до третьей 25 px*/
-  margin-bottom: 25px;
-}
-.company-three {
-  margin-bottom: 25px;
-}
-.company-three-duties {
-  margin-left: 18px;
-}
-.company-three-duties-item {
-  /* стили для списка третьей компании*/
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #595959;
-}
-.universaty-name {
-  /*стили и отступ для названия университета*/
-  color: #ff6b08;
+
+.university {
+  margin-bottom: 20px;
+  font-weight: 700;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 15px;
+  color: #ffbf00;
+  text-shadow: -0.5px 0.5px 0 rgba(248, 137, 34, 0.4);
 }
-.ocupation-name {
-  /*стили для названия специальности*/
-  color: #000000;
-  font-size: 14px;
+
+.specialty {
+  margin-bottom: 20px;
   font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 15px;
+  color:#000066;
+}
+
+.vertical-line {
+  font-weight: 700;
+  color: #000066;
 }
